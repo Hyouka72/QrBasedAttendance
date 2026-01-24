@@ -15,7 +15,7 @@ public class Attendance {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
 
     private Date date;
     private boolean status;

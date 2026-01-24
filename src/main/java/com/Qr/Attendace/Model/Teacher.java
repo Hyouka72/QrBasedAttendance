@@ -12,8 +12,10 @@ import lombok.Setter;
 public class Teacher {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    int id;
+    Integer id;
     String Name;
+    String Username;
+    String Password;
 
     @OneToOne
     @JoinColumn(name = "subject_id", unique = true) // foreign key column in Teacher table
