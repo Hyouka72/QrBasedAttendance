@@ -1,4 +1,4 @@
-package com.Qr.Attendace.Models;
+package com.Qr.Attendace.Model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
