@@ -1,13 +1,16 @@
 package com.Qr.Attendace.Payload;
 
-import com.Qr.Attendace.Model.Subject;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class TeacherDto {
     private Integer TeacherId;
-    private String Name;
-    private String Username;
-    private String Password;
+    private String name;
+    private String username;
+    private String password;
     private SubjectDto subject;
 }

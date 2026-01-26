@@ -14,6 +14,7 @@ import java.util.List;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")   // map to the real PK
     private Integer StudentId;
 
     private String name;
