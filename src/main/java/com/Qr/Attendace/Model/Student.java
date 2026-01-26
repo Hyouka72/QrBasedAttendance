@@ -14,7 +14,7 @@ import java.util.List;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer StudentId;
 
     private String name;
     private String userName;
@@ -24,5 +24,5 @@ public class Student {
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
     private List<Attendance> attendances;
 
-    // getters and setters
+
 }

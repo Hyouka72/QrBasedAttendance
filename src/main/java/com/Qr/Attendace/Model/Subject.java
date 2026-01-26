@@ -12,7 +12,7 @@ import lombok.Setter;
 public class Subject {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer StudentId;
 
     private String name;
     private String code;

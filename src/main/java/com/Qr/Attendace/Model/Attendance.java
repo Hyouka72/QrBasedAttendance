@@ -15,7 +15,7 @@ public class Attendance {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer AttendanceId;
 
     private Date date;
     private boolean status;
@@ -28,5 +28,5 @@ public class Attendance {
     @JoinColumn(name = "student_id")
     private Student student;
 
-    // getters and setters
+
 }
